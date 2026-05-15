@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    font-family: Patrick Hand;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background: #ad8888;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    margin: 150px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+}
+
+.login-form label {
+    font-weight: bold;
+    text-align: left;
+    font-size: 40px;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ad888889;
+}
+
+.login-form button {
+    padding: 12px;
+    font-size: 30px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+    background-color: #ad888889;
+    margin-top: 50px;
+}
