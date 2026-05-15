@@ -46,9 +46,13 @@ body {
     font-size: 35px;
 }
 
-.sidebar li:hover,
+.sidebar li:hover {
+    background: #e8f0ff;
+}
+
 .sidebar .active {
     background: #e8f0ff;
+    border: 2px solid black;
 }
 
 .profile {

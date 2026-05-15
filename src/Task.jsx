@@ -24,7 +24,7 @@ function Task() {
             <nav>
               <ul>
                 <li onClick={handleDashboard}>Dashboard</li>
-                <li onClick={handleTasks}>Tasks</li>
+                <li onClick={handleTasks} className="active">Tasks</li>
                 <li>Team</li>
                 <li>Schedule</li>
                 <li>Settings</li>
@@ -33,7 +33,7 @@ function Task() {
 
             <div className="profile-page">
               <p><strong>Stacy</strong></p>
-              <span>Team Member</span>
+              <span>Designer</span>
             </div>
           </aside>
 

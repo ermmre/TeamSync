@@ -17,7 +17,7 @@ function App() {
 
         <nav>
           <ul>
-            <li>Dashboard</li>
+            <li className="active">Dashboard</li>
             <li onClick={handleSubmit}>Tasks</li>
             <li>Team</li>
             <li>Schedule</li>
@@ -27,7 +27,7 @@ function App() {
 
         <div className="profile">
           <p><strong>Stacy</strong></p>
-          <span>Team Member</span>
+          <span>Designer</span>
         </div>
       </aside>
 

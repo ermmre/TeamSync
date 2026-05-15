@@ -61,9 +61,13 @@
     font-size: 35px;
 }
 
-.sidebar-page li:hover,
+.sidebar-page li:hover {
+    background: #e8f0ff;
+}
+
 .sidebar-page .active {
     background: #e8f0ff;
+    border: 2px solid black;
 }
 
 .profile-page {
