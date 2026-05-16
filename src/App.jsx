@@ -146,15 +146,14 @@ function App() {
           </ul>
         </div>
 
-        <div className="widget">
-          <h3>Quick Actions</h3>
-          <div className="actions">
-            <button>New Task</button>
-            <button>Invite</button>
-            <button>Meeting</button>
-          </div>
-        </div>
-
+       <div className="widget">
+  <h3>Quick Actions</h3>
+  <div className="actions">
+    <button>New Task</button>
+    <button>Invite</button>
+    <button>Meeting</button>
+  </div>
+<button className="assign-task-btn" onClick={() => navigate('/assign')}>Assign Task</button></div>
       </aside>
     </div>
   )

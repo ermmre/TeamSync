@@ -213,3 +213,21 @@ body {
 .actions button:hover {
     opacity: 0.6;
 }
+
+
+.assign-task-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #dcd0f5;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.5px;
+}
+
+.assign-task-btn:hover {
+    opacity: 0.8;
+}
