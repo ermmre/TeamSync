@@ -5,6 +5,7 @@ import App from './App.jsx';
 import Login from './Login.jsx';
 import Task from './Task.jsx';
 import './index.css'
+import Team from './Team.jsx';  // add this line
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/app" element={<App />} />
         <Route path="/" element={<Login />} />
         <Route path="/tasks" element={<Task />} />
+        <Route path="/team" element={<Team />} />  // add this route
+
       </Routes>
     </Router>
   </StrictMode>,

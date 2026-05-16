@@ -19,7 +19,7 @@ function App() {
           <ul>
             <li className="active">Dashboard</li>
             <li onClick={handleSubmit}>Tasks</li>
-            <li>Team</li>
+            <li onClick={() => navigate('/team')}>Team</li>
             <li>Schedule</li>
             <li>Settings</li>
           </ul>

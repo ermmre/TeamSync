@@ -1,0 +1,128 @@
+.team-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.team-page-header {
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin: 0.25rem 0;
+    font-size: 1.2rem;
+}
+
+.member-card p {
+    margin: 0;
+    color: #666;
+}
+
+.add-card {
+    background: rgba(255,255,255,0.4);
+    border-radius: 12px;
+    width: 220px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #888;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.add-card:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+.invite-box {
+    background: #e8e0e0;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0 2rem;
+}
+
+.invite-title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.invite-input-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.invite-input {
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    padding: 0.2rem;
+}
+
+.invite-send {
+    background: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.invite-send:hover {
+    background: #f0f0f0;
+}
+
+.invite-cancel {
+    background: #f5c5c5;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.invite-cancel:hover {
+    background: #f0a0a0;
+}
