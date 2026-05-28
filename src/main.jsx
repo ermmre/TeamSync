@@ -7,6 +7,8 @@ import Task from './Task.jsx';
 import './index.css'
 import Team from './Team.jsx';  // add this line
 import Assign from './Assign.tsx';
+import AI from './AI.tsx';
+import AssignP from './AssignP.tsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +19,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/tasks" element={<Task />} />
         <Route path="/team" element={<Team />} />  // add this route
         <Route path="/assign" element={<Assign />} />
-
+        <Route path="/ai" element={<AI />} />
+         
+         <Route path="/assignp" element={<AssignP />} />
       </Routes>
     </Router>
   </StrictMode>,

@@ -1,31 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import './Assign.css';
 import './Task.css';
 
 function Assign() {
     const navigate = useNavigate();
-    const [selected, setSelected] = useState([]);
-    const [showResult, setShowResult] = useState(false);
-
-    const getRole = () => {
-    if (selected.includes('Code') || selected.includes('Frontend')) return 'Developer';
-    if (selected.includes('Drawing') || selected.includes('Artwork')) return 'Designer';
-    if (selected.includes('Documentation') || selected.includes('Analyser')) return 'Research Lead';
-    if (selected.includes('Surveying and Interview')) return 'Project Manager';
-    return 'Team Member';
-};
-    
-
-    const skills = ['Code', 'Frontend', 'Documentation', 'Analyser', 'Surveying and Interview', 'Drawing', 'Artwork'];
-
-    const handleCheck = (skill) => {
-        if (selected.includes(skill)) {
-            setSelected(selected.filter(s => s !== skill));
-        } else if (selected.length < 2) {
-            setSelected([...selected, skill]);
-        }
-    };
 
     return (
         <div className="app-page">
@@ -50,64 +28,18 @@ function Assign() {
 
             <main className="main-content-page assign-main">
                 <h2 className="assign-header">Assign Task</h2>
-                <div className="assign-content">
-                    <div className="assign-box">
-                        <div className="assign-row">
-                            <label>Task Name</label>
-                            <input type="text" className="assign-input" placeholder="Enter task name" />
-                        </div>
-                        <div className="assign-row">
-                            <label>Assign To</label>
-                            <select className="assign-input">
-                                <option>John</option>
-                                <option>Stacy</option>
-                                <option>Mike</option>
-                                <option>Maya</option>
-                            </select>
-                        </div>
-                        <div className="assign-row">
-                            <label>Due Date</label>
-                            <input type="date" className="assign-input" />
-                        </div>
-                        <div className="assign-row">
-                            <label>Description</label>
-                            <textarea className="assign-input assign-textarea" placeholder="Enter task description" />
-                        </div>
-                        <button className="assign-submit">ASSIGN TASK</button>
+                <div className="assign-choice">
+                    <div className="choice-card" onClick={() => navigate('/ai')}>
+                        <span>🤖</span>
+                        <h3>AI Assist</h3>
+                        <p>Let AI suggest the best role for you</p>
                     </div>
-
-                    <div className="ai-box">
-                        <h2 className="ai-title">Assign with AI</h2>
-                        <h3 className="ai-quiz">QUIZ</h3>
-                        <p className="ai-limit">Select 2 boxes only</p>
-                        <div className="ai-skills">
-                            {skills.map(skill => (
-                                <label key={skill} className={`ai-skill ${selected.includes(skill) ? 'checked' : ''} ${!selected.includes(skill) && selected.length >= 2 ? 'disabled' : ''}`}>
-                                    <input
-                                        type="checkbox"
-                                        checked={selected.includes(skill)}
-                                        onChange={() => handleCheck(skill)}
-                                        disabled={!selected.includes(skill) && selected.length >= 2}
-                                    />
-                                    {skill}
-                                </label>
-                            ))}
-                        </div>
-<button className="ai-btn" onClick={() => setShowResult(true)}>Check My Role</button>                    </div>
+                    <div className="choice-card" onClick={() => navigate('/assignp')}>
+                        <span>✍️</span>
+                        <h3>Personal Assign</h3>
+                        <p>Manually assign a task to a team member</p>
+                    </div>
                 </div>
-
-                {showResult && (
-    <div className="result-overlay">
-        <div className="result-modal">
-            <p className="result-label">Role result</p>
-            <p className="result-text">You have been assigned for <strong>{getRole()}</strong>.</p>
-            <div className="result-actions">
-                <button className="result-reject" onClick={() => setShowResult(false)}>Reject</button>
-                <button className="result-accept" onClick={() => setShowResult(false)}>Accept</button>
-            </div>
-        </div>
-    </div>
-)}
             </main>
         </div>
     );
