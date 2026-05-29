@@ -26,7 +26,7 @@ function Task() {
                 <li onClick={handleDashboard}>Dashboard</li>
                 <li onClick={handleTasks} className="active">Tasks</li>
                 <li onClick={() => navigate('/team')}>Team</li>
-                <li>Schedule</li>
+                <li onClick={() => navigate('/schedule')}>Schedule</li>
                 <li>Settings</li>
               </ul>
             </nav>

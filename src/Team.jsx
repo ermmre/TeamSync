@@ -32,7 +32,7 @@ function Team() {
                         <li onClick={() => navigate('/app')}>Dashboard</li>
                         <li onClick={() => navigate('/tasks')}>Tasks</li>
                         <li className="active">Team</li>
-                        <li>Schedule</li>
+                        <li onClick={() => navigate('/schedule')}>Schedule</li>
                         <li>Settings</li>
                     </ul>
                 </nav>
