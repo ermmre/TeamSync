@@ -37,13 +37,17 @@ function Team() {
                     </ul>
                 </nav>
                 <div className="profile-page">
-                    <p><strong>Stacy</strong></p>
-                    <span>Designer</span>
+                    <div className="profile-pic">
+                        <img src="src/pictures/cat_2.webp" alt="Profile" />
+                    </div>
+                    <div>
+                        <p><strong>Stacy</strong></p>
+                        <span>Designer</span>
+                    </div>
                 </div>
             </aside>
 
             <main className="main-content-page team-main">
-                <h2 className="team-page-header">Team Members</h2>
                 <div className="team-grid">
                     {members.map((member) => (
                         <div key={member.name} className="member-card">
@@ -59,7 +63,7 @@ function Team() {
 
                 {showInvite && (
                     <div className="invite-box">
-                        <p className="invite-title">Please add the email to invite</p>
+                        <p className="invite-title">Enter an email to invite</p>
                         <div className="invite-input-row">
                             <label>Email</label>
                             <input

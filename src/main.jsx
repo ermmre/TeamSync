@@ -5,11 +5,11 @@ import App from './App.jsx';
 import Login from './Login.jsx';
 import Task from './Task.jsx';
 import './index.css'
-import Team from './Team.jsx';  // add this line
+import Team from './Team.jsx';
 import Assign from './Assign.tsx';
 import AI from './AI.tsx';
 import AssignP from './AssignP.tsx';
-import Schedule from './Schedule.tsx';
+import Schedule from './Schedule.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -19,12 +19,11 @@ createRoot(document.getElementById('root')).render(
         <Route path="/app" element={<App />} />
         <Route path="/" element={<Login />} />
         <Route path="/tasks" element={<Task />} />
-        <Route path="/team" element={<Team />} />  // add this route
+        <Route path="/team" element={<Team />} />
         <Route path="/assign" element={<Assign />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/schedule" element={<Schedule />} />
-         
-         <Route path="/assignp" element={<AssignP />} />
+        <Route path="/assignp" element={<AssignP />} />
       </Routes>
     </Router>
   </StrictMode>,

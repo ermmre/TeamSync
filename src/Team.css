@@ -5,19 +5,10 @@
     justify-content: flex-start;
 }
 
-.team-page-header {
-    padding: 2rem 2rem 0 2rem;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
 .team-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 2rem;
 }
 
 .member-card {
@@ -27,6 +18,7 @@
     width: 220px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 20px;
 }
 
 .member-card img {
@@ -39,7 +31,7 @@
 
 .member-card h3 {
     margin: 0.25rem 0;
-    font-size: 1.2rem;
+    font-size: 25px;
 }
 
 .member-card p {
@@ -51,7 +43,6 @@
     background: rgba(255,255,255,0.4);
     border-radius: 12px;
     width: 220px;
-    height: 270px;
     display: flex;
     align-items: center;
     justify-content: center;

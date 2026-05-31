@@ -20,14 +20,19 @@ function App() {
             <li className="active">Dashboard</li>
             <li onClick={handleSubmit}>Tasks</li>
             <li onClick={() => navigate('/team')}>Team</li>
-            <li>Schedule</li>
+            <li onClick={() => navigate('/schedule')}>Schedule</li>
             <li>Settings</li>
           </ul>
         </nav>
 
         <div className="profile">
-          <p><strong>Stacy</strong></p>
-          <span>Designer</span>
+          <div className="profile-pic">
+            <img src="src/pictures/cat_2.webp" alt="Stacy"></img>
+          </div>
+          <div>
+            <p><strong>Stacy</strong></p>
+            <span>Designer</span>
+          </div>
         </div>
       </aside>
 

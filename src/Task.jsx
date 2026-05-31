@@ -32,8 +32,13 @@ function Task() {
             </nav>
 
             <div className="profile-page">
-              <p><strong>Stacy</strong></p>
-              <span>Designer</span>
+              <div className="profile-pic">
+                <img src="src/pictures/cat_2.webp" alt="Stacy"></img>
+              </div>
+              <div>
+                <p><strong>Stacy</strong></p>
+                <span>Designer</span>
+              </div>
             </div>
           </aside>
 
